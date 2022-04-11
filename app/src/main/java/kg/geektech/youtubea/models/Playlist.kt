@@ -1,9 +1,17 @@
 package kg.geektech.youtubea.models
 
+import android.graphics.pdf.PdfDocument
+
 data class Playlist(
     private var part: String? = null,
     var etag:String,
-    var items:ArrayList<Items>
+    var items:ArrayList<Items>,
+    var pageInfo: PageInfo
+)
+
+data class PageInfo(
+    var totalResult:Int,
+    var resultPerPage:Int
 )
 data class Items(
     var kind: String,
@@ -11,6 +19,11 @@ data class Items(
     var id: String,
     var snippet: Snippet,
     var contentDetails: ContentDetails
+)
+
+data class Localized(
+    var title: String,
+    var description: String
 )
 
 data class Snippet(
@@ -22,6 +35,7 @@ data class Snippet(
     var channelTitle: String,
     var tags: List<String>,
     var categoryId: String,
+    var localized: Localized,
     var liveBroadcastContent: String,
 )
 
@@ -53,6 +67,7 @@ data class ContentDetails(
     var definition: String,
     var caption: String,
     var licensedContent: Boolean,
+    var videoId:String? = null,
     var contentRating: ContentRating,
     var projection: String,
     var itemCount: Int,

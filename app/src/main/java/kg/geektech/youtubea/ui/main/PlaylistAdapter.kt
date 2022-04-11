@@ -1,33 +1,33 @@
-package kg.geektech.youtubea.adapters
+package kg.geektech.youtubea.ui.main
 
+import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import kg.geektech.youtubea.databinding.ItemRecyclerBinding
 import kg.geektech.youtubea.extenssions.loadImage
 import kg.geektech.youtubea.models.Items
-import kg.geektech.youtubea.models.Playlist
 
-class PlaylistAdapter( private val initClick:(id:String,title:String,desc:String,count:String)->Unit):
+class PlaylistAdapter( private val initClick:(id:Items,title:String, desc:String,count:String)->Unit):
     RecyclerView.Adapter<PlaylistAdapter.ViewHolder>() {
     private var list= ArrayList<Items>()
 
    inner class ViewHolder(private val binding:ItemRecyclerBinding):RecyclerView.ViewHolder(binding.root) {
+
+        @SuppressLint("SetTextI18n")
         fun bind(items: Items) {
-            binding.ivIm.loadImage(items.snippet.thumbnails.high.url)
+            binding.ivIm.loadImage(items.snippet.thumbnails.default.url)
             binding.title.text = items.snippet.title
             val count = "${items.contentDetails.itemCount}"
-            binding.desc.text = count
+            binding.desc.text = "$count video series"
             itemView.setOnClickListener{
-                items.snippet.title.let { it1-> items.snippet.description.let { it2->
-                    initClick(items.id,it1,it2,items.contentDetails.itemCount.toString())
-                } }
+                    initClick(items,items.snippet.title,items.snippet.description,binding.desc.text.toString())
             }
-
         }
+   }
 
-    }
 
+    @SuppressLint("NotifyDataSetChanged")
     fun setList(playlist: ArrayList<Items>){
         this.list = playlist
         notifyDataSetChanged()

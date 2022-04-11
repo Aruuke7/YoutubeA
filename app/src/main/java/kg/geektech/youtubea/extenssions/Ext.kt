@@ -1,8 +1,11 @@
 package kg.geektech.youtubea.extenssions
 
+import android.content.Context
 import android.view.View
 import android.widget.ImageView
+import android.widget.Toast
 import com.bumptech.glide.Glide
+import kotlinx.coroutines.withContext
 
 fun ImageView.loadImage(url: String){
     Glide.with(context)
@@ -10,8 +13,6 @@ fun ImageView.loadImage(url: String){
         .into(this)
 }
 
-var View.invisible: Boolean
-    get() = visibility == View.INVISIBLE
-    set(value) {
-        visibility = if (value) View.INVISIBLE else View.VISIBLE
-    }
+fun Context.showToast(message: String){
+    Toast.makeText(this,message,Toast.LENGTH_SHORT).show()
+}

@@ -25,6 +25,5 @@ class RetrofitClient {
                     client(okHttpClient).build()
             return retrofit.create(ApiService::class.java)
         }
-
     }
 }

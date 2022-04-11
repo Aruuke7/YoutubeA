@@ -3,10 +3,18 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Aruuke/AndroidStudioProjects/YoutubeA/app/src/main/res/drawable/ic_baseline_arrow_back_24.xml" value="0.2703125" />
+        <entry key="..\:/Users/Aruuke/AndroidStudioProjects/YoutubeA/app/src/main/res/drawable/ic_baseline_arrow_back_ios_24.xml" value="0.2703125" />
         <entry key="..\:/Users/Aruuke/AndroidStudioProjects/YoutubeA/app/src/main/res/drawable/ic_playlist_bg.xml" value="0.26615384615384613" />
+        <entry key="..\:/Users/Aruuke/AndroidStudioProjects/YoutubeA/app/src/main/res/layout-v24/activity_playlist_detail.xml" value="0.2222222222222222" />
         <entry key="..\:/Users/Aruuke/AndroidStudioProjects/YoutubeA/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Users/Aruuke/AndroidStudioProjects/YoutubeA/app/src/main/res/layout/activity_playlist_detail.xml" value="0.264" />
+        <entry key="..\:/Users/Aruuke/AndroidStudioProjects/YoutubeA/app/src/main/res/layout/activity_scrolling.xml" value="0.2222222222222222" />
+        <entry key="..\:/Users/Aruuke/AndroidStudioProjects/YoutubeA/app/src/main/res/layout/content_scrolling.xml" value="0.2222222222222222" />
         <entry key="..\:/Users/Aruuke/AndroidStudioProjects/YoutubeA/app/src/main/res/layout/internet_connection.xml" value="0.264" />
-        <entry key="..\:/Users/Aruuke/AndroidStudioProjects/YoutubeA/app/src/main/res/layout/item_recycler.xml" value="0.5739299610894941" />
+        <entry key="..\:/Users/Aruuke/AndroidStudioProjects/YoutubeA/app/src/main/res/layout/item_detail.xml" value="0.264" />
+        <entry key="..\:/Users/Aruuke/AndroidStudioProjects/YoutubeA/app/src/main/res/layout/item_recycler.xml" value="0.536" />
+        <entry key="..\:/Users/Aruuke/AndroidStudioProjects/YoutubeA/app/src/main/res/layout/playlist_detail_activity.xml" value="0.2222222222222222" />
       </map>
     </option>
   </component>
