@@ -70,7 +70,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@color/grey"
-                app:expandedTitleMarginStart="64dp"
                 app:layout_scrollFlags="scroll">
 
                 <LinearLayout
@@ -86,16 +85,17 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:textAllCaps="true"
+                        android:hint="@string/emotional_well_being_healing_practices_for_children"
                         android:textColor="@color/black"
                         android:textSize="20sp"
-                        android:fitsSystemWindows="true"
                         android:textStyle="bold"/>
 
                     <TextView
                         android:id="@+id/desc_tv"
+                        android:hint="@string/in_this_series_we_break_down_the_impact_of_displacement_instability_violence_and_trauma_in_children_and_offer_exercises_to_support_children_in_their_healing_journey"
                         android:layout_width="match_parent"
+                        android:layout_marginTop="8dp"
                         android:layout_height="wrap_content"
-                        android:fitsSystemWindows="true"
                         android:textColor="@color/black"
                         android:textSize="15sp" />
                 </LinearLayout>
