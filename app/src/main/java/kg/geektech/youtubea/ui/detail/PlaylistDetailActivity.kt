@@ -13,11 +13,9 @@ import kg.geektech.youtubea.common.Network
 import kg.geektech.youtubea.common.Status
 import kg.geektech.youtubea.databinding.ActivityPlaylistDetailBinding
 import kg.geektech.youtubea.models.Items
-import kg.geektech.youtubea.ui.main.MainActivity
 import kg.geektech.youtubea.ui.ViewModel
 
 class PlaylistDetailActivity : BaseActivity<ViewModel, ActivityPlaylistDetailBinding>() {
-    private lateinit var playlist: Items
     private var adapter = DetailAdapter(this::initClick)
     private lateinit var  id:String
 
@@ -73,9 +71,9 @@ class PlaylistDetailActivity : BaseActivity<ViewModel, ActivityPlaylistDetailBin
         binding.checkInet.btnConnect.setOnClickListener {
             checkInternet()
         }
-        binding.toolbar.setNavigationOnClickListener(View.OnClickListener {
+        binding.toolbar.setNavigationOnClickListener {
             finish()
-        })
+        }
     }
 
     @SuppressLint("SetTextI18n")

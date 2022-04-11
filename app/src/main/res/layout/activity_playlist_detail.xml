@@ -87,7 +87,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
                         android:gravity="start"
-                        android:text="emotional_well_being_healing_practices_for_children"
+                        android:hint="@string/emotional_well_being_healing_practices_for_children"
                         android:textAllCaps="true"
                         android:textColor="@color/black"
                         android:textSize="20sp"
@@ -100,7 +100,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="20dp"
-                        android:text="in_this_series_we_break_down_the_impact_of_displacement_instability_violence_and_trauma_in_children_and_offer_exercises_to_support_children_in_their_healing_journey"
+                        android:hint="@string/in_this_series_we_break_down_the_impact_of_displacement_instability_violence_and_trauma_in_children_and_offer_exercises_to_support_children_in_their_healing_journey"
                         android:textColor="@color/black"
                         android:textSize="15sp"
 
@@ -126,7 +126,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:text="videos"
+            android:hint="@string/videos"
             android:textColor="@color/black"
             app:layout_anchor="@id/float_btn"
             app:layout_anchorGravity="bottom" />

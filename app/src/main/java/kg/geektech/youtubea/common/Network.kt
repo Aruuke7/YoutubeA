@@ -41,12 +41,4 @@ class Network(private val connectivityManager: ConnectivityManager) : LiveData<B
         super.onInactive()
         connectivityManager.unregisterNetworkCallback(networkCallback)
     }
-
-    companion object{
-
-    }
-    @RequiresApi(Build.VERSION_CODES.LOLLIPOP)
-    fun isNetworkAvailable():Boolean{
-        return value!!
-    }
 }

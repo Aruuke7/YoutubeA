@@ -1,6 +1,5 @@
 package kg.geektech.youtubea.models
 
-import android.graphics.pdf.PdfDocument
 
 data class Playlist(
     private var part: String? = null,
